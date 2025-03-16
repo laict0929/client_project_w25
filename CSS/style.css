@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 1rem;
+}
+
+/* Skip to Main Content */
+a[href="#main-content"] {
+    position: absolute;
+    top: -50px;
+    left: 10px;
+    background: #007bff;
+    color: white;
+    padding: 8px 12px;
+}
+
+a[href="#main-content"]:focus {
+    top: 10px;
+}
+
+/* Header */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    background: #00274c;
+    color: white;
+    padding: 1rem;
+}
+
+header img {
+    max-width: 20%;
+    margin: 10px;
+}
+
+header h1 {
+    font-size: 4vw;
+    font-weight: bold;
+    margin: 10px;
+
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background: #ffcb05;
+    padding: 0.5rem;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    list-style: none;
+    padding: 0;
+    background: #ffcb05;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00274c;
+    font-size: 3vw;
+}
+
+nav ul li.active a {
+    font-weight: bold;
+    border-bottom: 3px solid #00274c;
+}
+
+/* Main Content*/
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* Headings */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+main section, main div {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
+
+/* Images */
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* Buttons */
+.button {
+    display: inline-block;
+    background: #00274c;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.button:hover {
+    background: #004c8c;
+}
+
+/* Footer */
+footer {
+    background: #00274c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer a {
+    color: #ffcb05;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
