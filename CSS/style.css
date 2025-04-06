@@ -32,7 +32,7 @@ header {
 }
 
 header img {
-    max-width: 20%;
+    max-width: 10%;
     margin: 10px;
 }
 
@@ -40,7 +40,6 @@ header h1 {
     font-size: 4vw;
     font-weight: bold;
     margin: 10px;
-
     text-align: center;
 }
 
@@ -74,11 +73,10 @@ nav ul li.active a {
     border-bottom: 3px solid #00274c;
 }
 
-/* Main Content*/
+/* Main Content */
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
     gap: 1rem;
     padding: 1rem;
 }
@@ -104,7 +102,6 @@ ol {
     list-style-position: inside;
     padding: 0;
 }
-
 
 /* Images */
 figure {
@@ -159,4 +156,24 @@ footer a {
 
 footer a:hover {
     color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    main section, main div {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

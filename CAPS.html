@@ -62,8 +62,8 @@
     
         <div>
             <p>
-                <a href="https://caps.umich.edu/make-an-appointment" class="button">Make an Appointment</a>
-                <a href="https://caps.umich.edu/urgent-support" class="button">Urgent Support</a>
+                <a href="https://caps.umich.edu/article/making-appointment" class="button">Make an Appointment</a>
+                <a href="https://caps.umich.edu/article/urgent-support" class="button">Urgent Support</a>
             </p>
         </div>
         <div>
@@ -83,16 +83,20 @@
         </div>
     </main>
     <footer>
-        <h3>Contact</h3>
-        <p>Phone: <a href="tel:+17347648312">734-764-8312</a>(24hrs)<br>
-          Email: <a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a><br>
-          Michigan Union<br>
-          530 South State Street<br>
-          Suite 4079<br>
-          Ann Arbor, MI 48109
-        </p>
-    </footer>
-    
+      <h3>Contact</h3>
+      <p>
+        Phone: <a href="tel:+17347648312">734-764-8312</a> (24hrs)<br>
+        Email: <a href="mailto:caps-uofm@umich.edu">caps-uofm@umich.edu</a><br>
+        Michigan Union<br>
+        530 South State Street<br>
+        Suite 4079<br>
+        Ann Arbor, MI 48109
+      </p>
+      <p>&copy; <span id="year"></span></p>
+  </footer>
+  <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
